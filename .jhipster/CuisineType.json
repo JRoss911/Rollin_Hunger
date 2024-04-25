@@ -1,0 +1,23 @@
+{
+  "annotations": {
+    "changelogDate": "20240423200446"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "CuisineType",
+  "relationships": [
+    {
+      "otherEntityName": "foodTruck",
+      "otherEntityRelationshipName": "cuisineType",
+      "relationshipName": "trucks",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

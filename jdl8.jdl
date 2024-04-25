@@ -1,0 +1,78 @@
+entity UserProfile {
+  email String
+  points Integer
+}
+
+entity FoodTruck {
+  name String
+  description String
+  rating Float
+  profilePicture String
+}
+
+entity CuisineType {
+  name String
+}
+
+entity MenuItem {
+  name String,
+  description String,
+  price Float
+}
+
+entity Location {
+  address String,
+  latitude Float,
+  longitude Float
+}
+
+entity Event {
+  name String,
+  date Instant,
+  description String
+}
+
+entity Review {
+  rating Integer,
+  comment String,
+  date Instant
+}
+
+entity Order {
+  quantity Integer,
+  status String,
+  timestamp Instant
+}
+
+relationship OneToMany {
+  UserProfile{reviews} to Review{user}
+}
+
+relationship OneToOne {
+  FoodTruck{owner} to UserProfile{truck}
+}
+
+relationship OneToMany {
+  FoodTruck{menuItems} to MenuItem{truck}
+}
+
+relationship OneToMany {
+ CuisineType{trucks} to  FoodTruck{cuisineType}
+}
+
+relationship OneToMany {
+  Location{trucks} to FoodTruck{location},
+  Location{events} to Event{location}
+}
+
+relationship OneToMany {
+  UserProfile{orders} to Order{user}
+}
+
+relationship OneToMany {
+ FoodTruck{orders} to  Order{foodTruck}
+}
+
+relationship ManyToMany {
+  Order{menuItem} to MenuItem{orders}
+}

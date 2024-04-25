@@ -1,0 +1,32 @@
+{
+  "rollinHungerApp": {
+    "foodTruck": {
+      "home": {
+        "title": "Food Trucks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Food Truck",
+        "createOrEditLabel": "Create or edit a Food Truck",
+        "notFound": "No Food Trucks found"
+      },
+      "created": "A new Food Truck is created with identifier {{ param }}",
+      "updated": "A Food Truck is updated with identifier {{ param }}",
+      "deleted": "A Food Truck is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Food Truck {{ id }}?"
+      },
+      "detail": {
+        "title": "Food Truck"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "rating": "Rating",
+      "profilePicture": "Profile Picture",
+      "owner": "Owner",
+      "menuItems": "Menu Items",
+      "orders": "Orders",
+      "cuisineType": "Cuisine Type",
+      "location": "Location"
+    }
+  }
+}

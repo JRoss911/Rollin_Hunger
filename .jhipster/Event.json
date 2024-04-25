@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20240423200449"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Event",
+  "relationships": [
+    {
+      "otherEntityName": "location",
+      "otherEntityRelationshipName": "events",
+      "relationshipName": "location",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

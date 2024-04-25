@@ -1,0 +1,25 @@
+{
+  "rollinHungerApp": {
+    "cuisineType": {
+      "home": {
+        "title": "Cuisine Types",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Cuisine Type",
+        "createOrEditLabel": "Create or edit a Cuisine Type",
+        "notFound": "No Cuisine Types found"
+      },
+      "created": "A new Cuisine Type is created with identifier {{ param }}",
+      "updated": "A Cuisine Type is updated with identifier {{ param }}",
+      "deleted": "A Cuisine Type is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Cuisine Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Cuisine Type"
+      },
+      "id": "ID",
+      "name": "Name",
+      "trucks": "Trucks"
+    }
+  }
+}

@@ -7,7 +7,15 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
-        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+        "userProfile": "User Profile",
+        "foodTruck": "Food Truck",
+        "cuisineType": "Cuisine Type",
+        "menuItem": "Menu Item",
+        "location": "Location",
+        "event": "Event",
+        "review": "Review",
+        "order": "Order"
       },
       "account": {
         "main": "Account",

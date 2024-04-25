@@ -1,0 +1,38 @@
+{
+  "annotations": {
+    "changelogDate": "20240423200447"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Float"
+    }
+  ],
+  "name": "MenuItem",
+  "relationships": [
+    {
+      "otherEntityName": "foodTruck",
+      "otherEntityRelationshipName": "menuItems",
+      "relationshipName": "truck",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "order",
+      "otherEntityRelationshipName": "menuItem",
+      "relationshipName": "orders",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}
